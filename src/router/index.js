@@ -2,7 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 const routes = [
   {
-    path: '/index',
+    path: '/',
     name: 'index',
     component: () => import('../views/index.vue')
   },
@@ -10,6 +10,16 @@ const routes = [
     path: '/news',
     name: 'news',
     component: () => import('../views/news.vue')
+  },
+  {
+    path: '/InstitutionalSetting',
+    name: 'InstitutionalSetting',
+    component: () => import('../views/InstitutionalSetting.vue')
+  },
+  {
+    path: '/schoolsituation',
+    name: 'schoolsituation',
+    component: () => import('../views/schoolsituation.vue')
   },
 ]
 
